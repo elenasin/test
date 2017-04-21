@@ -31,6 +31,11 @@ window.RegisterItem = function(Item) {
          populateItems();
       });
     });
+
+    var registrationWatcher = contractInstance.ItemRegistered({gas: 1400000, from: addr})
+      .watch(function(err,id,serialNumber,validationCompany,isValid,reason){
+ 	console.log("Item Registered Event:" + id.toString());
+    });
   });
 }
 

@@ -14564,10 +14564,16 @@ window.__contracts__ = {
       "links": {},
       "address": "0x4c381f82a84bee44849edfd9a124af965a30c410",
       "updated_at": 1492732410168
+    },
+    "1492798487972": {
+      "events": {},
+      "links": {},
+      "address": "0x2b66ba9bae12571f09932c0006a4341ab5c277e7",
+      "updated_at": 1492799110300
     }
   },
   "schema_version": "0.0.5",
-  "updated_at": 1492732410168
+  "updated_at": 1492799110300
 },
   "ItemRegistry": {
   "contract_name": "ItemRegistry",
@@ -15299,10 +15305,142 @@ window.__contracts__ = {
       "links": {},
       "address": "0x2ab7b2c90f5a24b45fe3a9ce3128819a08a377e8",
       "updated_at": 1492732410164
+    },
+    "1492798487972": {
+      "events": {
+        "0x1832f34a4d118bfe88e69da96a0227f33d19e85197d972e7455cf7c39b6f1729": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "ownerAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "name": "date",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "name": "price",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "forSale",
+              "type": "bool"
+            }
+          ],
+          "name": "ItemRegistered",
+          "type": "event"
+        },
+        "0x3d0be3a3bbdb36b253d40a546d15d6b7f402fc43e4cd4a067af359b0763b6f3c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "id",
+              "type": "uint256"
+            }
+          ],
+          "name": "ItemDeleted",
+          "type": "event"
+        },
+        "0xb9bb8d618b0b7305a7f7b7380d0d43cc843240a90cd33ab0826f98de1a69a2a9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "serialNumber",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "name": "validationCompany",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "isValid",
+              "type": "bool"
+            },
+            {
+              "indexed": false,
+              "name": "reason",
+              "type": "string"
+            }
+          ],
+          "name": "ItemValidated",
+          "type": "event"
+        },
+        "0xa878aff89f953a37d6f49daca7e239720fc2b866aa8741ac66a8117c0de02ef8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "fromOwner",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "toOwner",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "price",
+              "type": "uint256"
+            }
+          ],
+          "name": "ItemTransferred",
+          "type": "event"
+        },
+        "0x2c243a3b6274749ca700c6d75495ec3a4ec1a4ae7fe4ecbbde956c0a386f774e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "itemId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "buyer",
+              "type": "address"
+            }
+          ],
+          "name": "SaleStart",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x4dc165d51921911ea869d04916f6d5b24d83c33e",
+      "updated_at": 1492799110297
     }
   },
   "schema_version": "0.0.5",
-  "updated_at": 1492732410164
+  "updated_at": 1492799110297
 },
   "MetaCoin": {
   "contract_name": "MetaCoin",
@@ -15425,10 +15563,41 @@ window.__contracts__ = {
       },
       "address": "0x40f2f7defc4c4201aae43acb08011630371c28ca",
       "updated_at": 1492732410161
+    },
+    "1492798487972": {
+      "events": {
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        }
+      },
+      "links": {
+        "ConvertLib": "0x2b66ba9bae12571f09932c0006a4341ab5c277e7"
+      },
+      "address": "0x457df2092bfbd62fc31ca47b463bd2ec8a7e82ca",
+      "updated_at": 1492799110294
     }
   },
   "schema_version": "0.0.5",
-  "updated_at": 1492732410161
+  "updated_at": 1492799110294
 },
   "Migrations": {
   "contract_name": "Migrations",
@@ -15498,10 +15667,16 @@ window.__contracts__ = {
       "links": {},
       "address": "0x06a40cc79b096f051fb14ba11c557bf39825317b",
       "updated_at": 1492732410168
+    },
+    "1492798487972": {
+      "events": {},
+      "links": {},
+      "address": "0x603b8e607b88581b6bf066b7840074c4adbcbe33",
+      "updated_at": 1492799110301
     }
   },
   "schema_version": "0.0.5",
-  "updated_at": 1492732410168
+  "updated_at": 1492799110301
 }
 };
 
@@ -15579,6 +15754,11 @@ window.RegisterItem = function(Item) {
          $("#msg").html("You registered" + v.toString() + " items");
          populateItems();
       });
+    });
+
+    var registrationWatcher = contractInstance.ItemRegistered({gas: 1400000, from: addr})
+      .watch(function(err,id,serialNumber,validationCompany,isValid,reason){
+ 	console.log("Item Registered Event:" + id.toString());
     });
   });
 }
