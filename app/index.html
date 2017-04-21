@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test DAPP</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <style>
+    .margin-top-3 {
+      margin-top: 3em;
+    }
+  </style>
+</head>
+<body class="container">
+  <h1>A Simple Test Registry Application</h1>
+  <div class="col-sm-7 margin-top-3">
+    <h2>Items</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Items</th>
+          </tr>
+        </thead>
+        <tbody id="owner-rows">
+        </tbody>
+      </table>
+    </div>
+    <div class="container-fluid">
+      <h2>Register Item</h2>
+      <div id="msg"></div>
+      <input type="text" id="description" placeholder="Enter the description"/>
+      <input type="text" id="origin" placeholder="Enter the origin"/>
+      <input type="text" id="issueDate" placeholder="Enter the issueDate"/>
+      <input type="text" id="price" placeholder="Enter the price in Ether"/>
+      <input type="text" id="forSale" placeholder="Enter if item is for sale (true/false)"/>
+      <br>
+      <br>
+      <a href="#" onclick="RegisterItem()" class="btn btn-primary">Register Item</a>
+    </div>
+  </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="app.js"></script>
+</html>
